@@ -1,0 +1,44 @@
+##分布式，eureka server集群
+#spring:
+#  application:
+#    name: coupon-eureka
+#  profiles: server1
+#server:
+#  port: 8000
+#eureka:
+#  instance:
+#    hostname: 127.0.0.1
+#    prefer-ip-address: false
+#  client:
+#    service-url:
+#      defaultZone: http://127.0.0.1:8001/eureka/,http://127.0.0.1:8002/eureka/
+#
+#---
+#spring:
+#  application:
+#    name: coupon-eureka
+#  profiles: server2
+#server:
+#  port: 8001
+#eureka:
+#  instance:
+#    hostname: 127.0.0.1
+#    prefer-ip-address: false
+#  client:
+#    service-url:
+#      defaultZone: http://127.0.0.1:8000/eureka/,http://127.0.0.1:8002/eureka/
+#
+#---
+#spring:
+#  application:
+#    name: coupon-eureka
+#  profiles: server3
+#server:
+#  port: 8002
+#eureka:
+#  instance:
+#    hostname: 127.0.0.1
+#    prefer-ip-address: false
+#  client:
+#    service-url:
+#      defaultZone: http://127.0.0.1:8001/eureka/,http://127.0.0.1:8000/eureka/
